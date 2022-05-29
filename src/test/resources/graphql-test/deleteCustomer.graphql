@@ -1,0 +1,5 @@
+mutation ( $customerId : String) {
+    deleteCustomer (
+        customerId : $customerId
+    )
+}

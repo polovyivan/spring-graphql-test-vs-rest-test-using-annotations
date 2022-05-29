@@ -1,0 +1,16 @@
+scalar Date
+
+type Query {
+    allCustomersWithFilters(
+                  fullName : String
+                  phoneNumber : String
+                  createdAt : Date) : [CustomerResponse]
+}
+
+type CustomerResponse {
+      id : String
+      fullName : String
+      phoneNumber : String
+      address : String
+      createdAt : Date
+}

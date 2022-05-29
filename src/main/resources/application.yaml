@@ -1,0 +1,22 @@
+server:
+  port: 8001
+  servlet:
+    context-path: /spring-graphql-test-vs-rest-test
+
+spring:
+  graphql:
+    path: /customers-graphql
+    schema:
+      locations: classpath:graphql/
+    graphiql:
+      enabled: true
+      path: /graphiq
+
+  datasource:
+    url: jdbc:h2:mem:customerdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect

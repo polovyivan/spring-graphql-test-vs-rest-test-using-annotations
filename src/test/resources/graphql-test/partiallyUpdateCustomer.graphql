@@ -1,0 +1,13 @@
+mutation ($partiallyUpdateCustomerRequest : PartiallyUpdateCustomerRequest
+    $customerId : String) {
+    partiallyUpdateCustomer (
+        customerId : $customerId
+        partiallyUpdateCustomerRequest : $partiallyUpdateCustomerRequest)
+    {
+        id
+        fullName
+        phoneNumber
+        address
+        createdAt
+    }
+}

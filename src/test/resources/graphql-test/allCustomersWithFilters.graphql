@@ -1,0 +1,13 @@
+query ($fullName : String
+    $phoneNumber : String
+    $createdAt : Date ){
+    allCustomersWithFilters(fullName: $fullName
+        phoneNumber : $phoneNumber
+        createdAt : $createdAt) {
+        id
+        fullName
+        phoneNumber
+        address
+        createdAt
+    }
+}

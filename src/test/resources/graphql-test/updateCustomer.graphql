@@ -1,0 +1,13 @@
+mutation ($updateCustomerRequest : UpdateCustomerRequest
+    $customerId : String) {
+    updateCustomer (
+        customerId : $customerId
+        updateCustomerRequest : $updateCustomerRequest)
+    {
+        id
+        fullName
+        phoneNumber
+        address
+        createdAt
+    }
+}

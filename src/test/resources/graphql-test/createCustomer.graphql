@@ -1,0 +1,10 @@
+mutation ($createCustomerRequest : CreateCustomerRequest) {
+    createCustomer (createCustomerRequest : $createCustomerRequest)
+    {
+        id
+        fullName
+        phoneNumber
+        address
+        createdAt
+    }
+}

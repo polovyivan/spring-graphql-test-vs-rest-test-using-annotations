@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:customerdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  graphql:
+    path: /customers-graphql
+    schema:
+      locations: classpath:graphql/
